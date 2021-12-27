@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PnnsPwT49UkWVUPO+uCmOs5A95imUHdne1jRIaB87mCAiWisFTEElQbDfBPClr5d+XYWp1NlfRLxgYcrZrsyxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nick_\\Documents\\FlatRedBallProjects\\Algorhytms\\Algorhytms\\Algorhytms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nick_\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

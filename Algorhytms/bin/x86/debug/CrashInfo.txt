@@ -1,0 +1,14 @@
+System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei GlueControl.Editing.EditorVisuals.Rectangle(Single width, Single height, Vector3 centerPosition, Nullable`1 color) in c:\users\nick_\documents\flatredballprojects\algorhytms\Algorhytms\GlueControl\Editing\EditorVisuals.Generated.cs:Zeile 205.
+   bei GlueControl.Screens.EntityViewingScreen.ActivityEditMode() in c:\users\nick_\documents\flatredballprojects\algorhytms\Algorhytms\GlueControl\Screens\EntityViewingScreen.Generated.cs:Zeile 76.
+   bei FlatRedBall.Screens.ScreenManager.Activity() in C:\BuildAgent\work\a22593881c1cbdfe\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\Screens\ScreenManager.cs:Zeile 176.
+   bei Algorhytms.Game1.Update(GameTime gameTime) in c:\users\nick_\documents\flatredballprojects\algorhytms\Algorhytms\Game1.cs:Zeile 100.
+   bei Microsoft.Xna.Framework.Game.DoUpdate(GameTime gameTime)
+   bei Microsoft.Xna.Framework.Game.Tick()
+   bei Microsoft.Xna.Framework.SdlGamePlatform.RunLoop()
+   bei Microsoft.Xna.Framework.Game.Run(GameRunBehavior runBehavior)
+   bei Microsoft.Xna.Framework.Game.Run()
+   bei Algorhytms.Program.Main() in c:\users\nick_\documents\flatredballprojects\algorhytms\Algorhytms\Program.cs:Zeile 20.

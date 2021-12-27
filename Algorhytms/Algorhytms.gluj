@@ -1,0 +1,964 @@
+{
+  "In2D": true,
+  "ResolutionWidth": 800,
+  "ResolutionHeight": 600,
+  "OrthogonalWidth": 800,
+  "OrthogonalHeight": 600,
+  "Screens": [
+    {
+      "Tags": [
+        "GLUE"
+      ],
+      "Source": "GLUE",
+      "ReferencedFiles": [
+        {
+          "Name": "gumproject/Screens/GameScreenGum.gusx",
+          "IsSharedStatic": true,
+          "RuntimeType": "Algorhytms.GumRuntimes.GameScreenGumRuntime",
+          "ProjectsToExcludeFrom": []
+        }
+      ],
+      "NamedObjects": [
+        {
+          "InstanceName": "Map",
+          "SourceClassType": "FlatRedBall.TileGraphics.LayeredTileMap",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "bool",
+              "Member": "CreateEntitiesFromTiles",
+              "Value": true,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 2,
+          "SourceFile": "FlatRedBall.TileGraphics.LayeredTileMap",
+          "SetByDerived": true,
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "SolidCollision",
+          "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            },
+            {
+              "Name": "CollisionCreationOptions",
+              "Value": 4
+            },
+            {
+              "Name": "CollisionTileSize",
+              "Value": 16.0
+            },
+            {
+              "Name": "CollisionFillWidth",
+              "Value": 32
+            },
+            {
+              "Name": "CollisionFillHeight",
+              "Value": 1
+            },
+            {
+              "Name": "InnerSizeWidth",
+              "Value": 800.0
+            },
+            {
+              "Name": "InnerSizeHeight",
+              "Value": 600.0
+            },
+            {
+              "Name": "SourceTmxName",
+              "Value": "Map",
+              "Type": "String"
+            },
+            {
+              "Name": "CollisionTileTypeName",
+              "Value": "SolidCollision",
+              "Type": "String"
+            }
+          ],
+          "InstructionSaves": [],
+          "SourceType": 2,
+          "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "SetByDerived": true,
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "CloudCollision",
+          "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            },
+            {
+              "Name": "CollisionCreationOptions",
+              "Value": 4
+            },
+            {
+              "Name": "CollisionTileSize",
+              "Value": 16.0
+            },
+            {
+              "Name": "CollisionFillWidth",
+              "Value": 32
+            },
+            {
+              "Name": "CollisionFillHeight",
+              "Value": 1
+            },
+            {
+              "Name": "InnerSizeWidth",
+              "Value": 800.0
+            },
+            {
+              "Name": "InnerSizeHeight",
+              "Value": 600.0
+            },
+            {
+              "Name": "SourceTmxName",
+              "Value": "Map",
+              "Type": "String"
+            },
+            {
+              "Name": "CollisionTileTypeName",
+              "Value": "CloudCollision",
+              "Type": "String"
+            }
+          ],
+          "InstructionSaves": [],
+          "SourceType": 2,
+          "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "SetByDerived": true,
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "PlayerInstance",
+          "SourceClassType": "Entities\\Player",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 1,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 24.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -488.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities/Player",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "GoalpostInstance",
+          "SourceClassType": "Entities\\Goalpost",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 1,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 488.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": -24.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 1,
+          "SourceFile": "Entities/Goalpost",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "PlayerInstanceVsSolidCollision",
+          "SourceClassType": "FlatRedBall.Math.Collision.CollidableVsTileShapeCollectionRelationship<Algorhytms.Entities.Player>",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            },
+            {
+              "Name": "IsAutoNameEnabled",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "FirstCollisionName",
+              "Value": "PlayerInstance",
+              "Type": "String"
+            },
+            {
+              "Name": "SecondCollisionName",
+              "Value": "SolidCollision",
+              "Type": "String"
+            },
+            {
+              "Name": "CollisionType",
+              "Value": 1,
+              "Type": "int"
+            },
+            {
+              "Name": "FirstCollisionMass",
+              "Value": 0.0
+            },
+            {
+              "Name": "SecondCollisionMass",
+              "Value": 1.0
+            },
+            {
+              "Name": "CollisionElasticity",
+              "Value": 1.0
+            },
+            {
+              "Name": "IsCollisionActive",
+              "Value": true
+            }
+          ],
+          "InstructionSaves": [],
+          "SourceType": 2,
+          "SourceFile": "FlatRedBall.Math.Collision.CollidableVsTileShapeCollectionRelationship<Algorhytms.Entities.Player>",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ],
+      "Name": "Screens\\GameScreen",
+      "CustomClassesForExport": []
+    },
+    {
+      "Tags": [
+        "GLUE"
+      ],
+      "Source": "GLUE",
+      "BaseScreen": "Screens\\GameScreen",
+      "BaseElement": "Screens\\GameScreen",
+      "ReferencedFiles": [
+        {
+          "Properties": [
+            {
+              "Name": "CreationOptions",
+              "Value": "{\"IncludeDefaultTileset\":true,\"IncludeGameplayLayer\":true,\"SolidCollisionCheckBoxVisibility\":0,\"IsSolidCollisionBorderChecked\":true,\"ShouldAddCollisionBorder\":true}"
+            }
+          ],
+          "Name": "Screens/Level_1/LayeredTileMapFile.tmx",
+          "IsSharedStatic": true,
+          "RuntimeType": "FlatRedBall.TileGraphics.LayeredTileMap",
+          "ProjectsToExcludeFrom": []
+        }
+      ],
+      "NamedObjects": [
+        {
+          "InstanceName": "Map",
+          "SourceClassType": "FlatRedBall.TileGraphics.LayeredTileMap",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "bool",
+              "Member": "CreateEntitiesFromTiles",
+              "Value": true,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 2,
+          "SourceFile": "FlatRedBall.TileGraphics.LayeredTileMap",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true,
+          "DefinedByBase": true
+        },
+        {
+          "InstanceName": "SolidCollision",
+          "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            },
+            {
+              "Name": "CollisionCreationOptions",
+              "Value": 4
+            },
+            {
+              "Name": "CollisionTileSize",
+              "Value": 16.0
+            },
+            {
+              "Name": "CollisionFillWidth",
+              "Value": 32
+            },
+            {
+              "Name": "CollisionFillHeight",
+              "Value": 1
+            },
+            {
+              "Name": "InnerSizeWidth",
+              "Value": 800.0
+            },
+            {
+              "Name": "InnerSizeHeight",
+              "Value": 600.0
+            },
+            {
+              "Name": "SourceTmxName",
+              "Value": "Map",
+              "Type": "String"
+            },
+            {
+              "Name": "CollisionTileTypeName",
+              "Value": "SolidCollision",
+              "Type": "String"
+            }
+          ],
+          "InstructionSaves": [],
+          "SourceType": 2,
+          "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true,
+          "DefinedByBase": true
+        },
+        {
+          "InstanceName": "CloudCollision",
+          "SourceClassType": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            },
+            {
+              "Name": "CollisionCreationOptions",
+              "Value": 4
+            },
+            {
+              "Name": "CollisionTileSize",
+              "Value": 16.0
+            },
+            {
+              "Name": "CollisionFillWidth",
+              "Value": 32
+            },
+            {
+              "Name": "CollisionFillHeight",
+              "Value": 1
+            },
+            {
+              "Name": "InnerSizeWidth",
+              "Value": 800.0
+            },
+            {
+              "Name": "InnerSizeHeight",
+              "Value": 600.0
+            },
+            {
+              "Name": "SourceTmxName",
+              "Value": "Map",
+              "Type": "String"
+            },
+            {
+              "Name": "CollisionTileTypeName",
+              "Value": "CloudCollision",
+              "Type": "String"
+            }
+          ],
+          "InstructionSaves": [],
+          "SourceType": 2,
+          "SourceFile": "FlatRedBall.TileCollisions.TileShapeCollection",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true,
+          "DefinedByBase": true
+        },
+        {
+          "InstanceName": "LayeredTileMapInstance",
+          "SourceClassType": "FlatRedBall.TileGraphics.LayeredTileMap",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [],
+          "SourceType": 2,
+          "SourceFile": "LayeredTileMap (.tmx)",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ],
+      "Name": "Screens\\Level_1",
+      "CustomClassesForExport": []
+    }
+  ],
+  "Entities": [
+    {
+      "Tags": [
+        "GLUE"
+      ],
+      "Source": "GLUE",
+      "CreatedByOtherEntities": true,
+      "Is2D": true,
+      "ReferencedFiles": [
+        {
+          "Name": "Entities/Goalpost/GoalFlag.png",
+          "IsSharedStatic": true,
+          "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+          "ProjectsToExcludeFrom": []
+        }
+      ],
+      "CustomVariables": [
+        {
+          "Properties": [
+            {
+              "Name": "Type",
+              "Value": "float",
+              "Type": "String"
+            }
+          ],
+          "Name": "X"
+        },
+        {
+          "Properties": [
+            {
+              "Name": "Type",
+              "Value": "float",
+              "Type": "String"
+            }
+          ],
+          "Name": "Y"
+        },
+        {
+          "Properties": [
+            {
+              "Name": "Type",
+              "Value": "float",
+              "Type": "String"
+            }
+          ],
+          "Name": "Z"
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "InputDevice",
+          "Value": 0
+        },
+        {
+          "Name": "ImplementsICollidable",
+          "Value": true,
+          "Type": "Boolean"
+        }
+      ],
+      "NamedObjects": [
+        {
+          "InstanceName": "SpriteInstance",
+          "SourceClassType": "FlatRedBall.Sprite",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "Microsoft.Xna.Framework.Graphics.Texture2D",
+              "Member": "Texture",
+              "Value": "GoalFlag",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "TextureScale",
+              "Value": 1.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 2,
+          "SourceFile": "Sprite",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "TextInstance",
+          "SourceClassType": "FlatRedBall.Graphics.Text",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "bool",
+              "Member": "AdjustPositionForPixelPerfectDrawing",
+              "Value": false,
+              "Time": 0.0
+            },
+            {
+              "Type": "string",
+              "Member": "DisplayText",
+              "Value": "Goal",
+              "Time": 0.0
+            },
+            {
+              "Type": "FlatRedBall.Graphics.HorizontalAlignment",
+              "Member": "HorizontalAlignment",
+              "Value": 2,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "RotationZ",
+              "Value": 0.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "TextureScale",
+              "Value": 0.4,
+              "Time": 0.0
+            },
+            {
+              "Type": "bool",
+              "Member": "Visible",
+              "Value": true,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "X",
+              "Value": 0.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Y",
+              "Value": 0.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 2,
+          "SourceFile": "Text",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AxisAlignedRectangleInstance",
+          "SourceClassType": "FlatRedBall.Math.Geometry.AxisAlignedRectangle",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "Height",
+              "Value": 16.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Width",
+              "Value": 16.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 2,
+          "SourceFile": "AxisAlignedRectangle",
+          "HasPublicProperty": true,
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ],
+      "Name": "Entities\\Goalpost",
+      "CustomClassesForExport": []
+    },
+    {
+      "Tags": [
+        "GLUE"
+      ],
+      "Source": "GLUE",
+      "CreatedByOtherEntities": true,
+      "Is2D": true,
+      "ReferencedFiles": [
+        {
+          "Name": "Entities/Player/TopDownValuesStatic.csv",
+          "IsSharedStatic": true,
+          "HasPublicProperty": true,
+          "CreatesDictionary": true,
+          "ProjectsToExcludeFrom": []
+        },
+        {
+          "Name": "Entities/Player/mainplayer.png",
+          "IsSharedStatic": true,
+          "RuntimeType": "Microsoft.Xna.Framework.Graphics.Texture2D",
+          "ProjectsToExcludeFrom": []
+        }
+      ],
+      "CustomVariables": [
+        {
+          "Properties": [
+            {
+              "Name": "Type",
+              "Value": "float",
+              "Type": "String"
+            }
+          ],
+          "Name": "X"
+        },
+        {
+          "Properties": [
+            {
+              "Name": "Type",
+              "Value": "float",
+              "Type": "String"
+            }
+          ],
+          "Name": "Y"
+        },
+        {
+          "Properties": [
+            {
+              "Name": "Type",
+              "Value": "float",
+              "Type": "String"
+            }
+          ],
+          "Name": "Z"
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "InputDevice",
+          "Value": 0
+        },
+        {
+          "Name": "ImplementsICollidable",
+          "Value": true,
+          "Type": "Boolean"
+        }
+      ],
+      "NamedObjects": [
+        {
+          "InstanceName": "SpriteInstance",
+          "SourceClassType": "FlatRedBall.Sprite",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "Blue",
+              "Value": 0.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Green",
+              "Value": 0.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Height",
+              "Value": 16.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Red",
+              "Value": 0.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "Microsoft.Xna.Framework.Graphics.Texture2D",
+              "Member": "Texture",
+              "Value": "mainplayer",
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "TextureScale",
+              "Value": 1.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Width",
+              "Value": 16.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 2,
+          "SourceFile": "Sprite",
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        },
+        {
+          "InstanceName": "AxisAlignedRectangleInstance",
+          "SourceClassType": "FlatRedBall.Math.Geometry.AxisAlignedRectangle",
+          "Properties": [
+            {
+              "Name": "AssociateWithFactory",
+              "Value": true,
+              "Type": "Boolean"
+            },
+            {
+              "Name": "SourceType",
+              "Value": 2,
+              "Type": "SourceType"
+            }
+          ],
+          "InstructionSaves": [
+            {
+              "Type": "float",
+              "Member": "Height",
+              "Value": 16.0,
+              "Time": 0.0
+            },
+            {
+              "Type": "float",
+              "Member": "Width",
+              "Value": 16.0,
+              "Time": 0.0
+            }
+          ],
+          "SourceType": 2,
+          "SourceFile": "AxisAlignedRectangle",
+          "HasPublicProperty": true,
+          "AttachToContainer": true,
+          "GenerateTimedEmit": true
+        }
+      ],
+      "Name": "Entities\\Player",
+      "CustomClassesForExport": []
+    }
+  ],
+  "GlobalFiles": [
+    {
+      "Properties": [
+        {
+          "Name": "FileAdditionBehavior",
+          "Value": 1,
+          "Type": "int"
+        },
+        {
+          "Name": "AutoCreateGumScreens",
+          "Value": true,
+          "Type": "Boolean"
+        },
+        {
+          "Name": "ShowMouse",
+          "Value": true,
+          "Type": "Boolean"
+        },
+        {
+          "Name": "MakeGumInstancesPublic",
+          "Value": true,
+          "Type": "Boolean"
+        },
+        {
+          "Name": "IsMatchGameResolutionInGumChecked",
+          "Value": true,
+          "Type": "Boolean"
+        },
+        {
+          "Name": "IncludeFormsInComponents",
+          "Value": true
+        },
+        {
+          "Name": "IncludeComponentToFormsAssociation",
+          "Value": true
+        }
+      ],
+      "Name": "GumProject/GumProject.gumx",
+      "IsSharedStatic": true,
+      "DestroyOnUnload": false,
+      "HasPublicProperty": true,
+      "ProjectsToExcludeFrom": []
+    }
+  ],
+  "Properties": [
+    {
+      "Name": "IsOpenVisualStudioAutomaticallyChecked",
+      "Value": false
+    }
+  ],
+  "GlobalContentSettingsSave": {},
+  "SyncedProjects": [],
+  "StartUpScreen": "Screens\\Level_1",
+  "ResolutionPresets": [],
+  "PerformanceSettingsSave": {},
+  "IgnoredDirectories": [],
+  "CustomClasses": [
+    {
+      "CsvFilesUsingThis": [],
+      "RequiredProperties": [
+        {
+          "Type": "string",
+          "Member": "Name",
+          "Time": 0.0
+        },
+        {
+          "Type": "System.Collections.Generic.List<FlatRedBall.Content.AnimationChain.AnimationFrameSave>",
+          "Member": "EmbeddedAnimation",
+          "Time": 0.0
+        }
+      ],
+      "Name": "TileMapInfo",
+      "GenerateCode": true
+    },
+    {
+      "CsvFilesUsingThis": [
+        "Entities/Player/TopDownValuesStatic.csv"
+      ],
+      "RequiredProperties": [],
+      "Name": "TopDownValues",
+      "GenerateCode": true
+    }
+  ],
+  "ApplyToFixedResolutionPlatforms": true,
+  "ExternallyBuiltFileDirectory": "../../",
+  "FileVersion": 9,
+  "PluginData": {
+    "RequiredPlugins": [
+      {
+        "Name": "Tiled Plugin",
+        "Version": "2.16.0.0",
+        "VersionRequirement": 2
+      }
+    ]
+  },
+  "DisplaySettings": {
+    "Name": "Custom",
+    "GenerateDisplayCode": true,
+    "Is2D": true,
+    "ResolutionWidth": 521,
+    "ResolutionHeight": 512,
+    "AspectRatioWidth": 16.0,
+    "AspectRatioHeight": 9.0,
+    "SupportLandscape": true,
+    "Scale": 100,
+    "ScaleGum": 100,
+    "DominantInternalCoordinates": 1,
+    "TextureFilter": 1
+  },
+  "AllDisplaySettings": []
+}

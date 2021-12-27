@@ -1,0 +1,16 @@
+System.IO.FileNotFoundException: Could not find the file C:/Users/Nick_/Documents/FlatRedBallProjects/Algorhytms/Algorhytms/bin/DesktopGL/x64/Debug/content/entities/goalpost/goalflag.png or the directory C:/Users/Nick_/Documents/FlatRedBallProjects/Algorhytms/Algorhytms/bin/DesktopGL/x64/Debug/content/entities/goalpost/
+Dateiname: "C:/Users/Nick_/Documents/FlatRedBallProjects/Algorhytms/Algorhytms/bin/DesktopGL/x64/Debug/content/entities/goalpost/goalflag.png"
+   bei FlatRedBall.IO.FileManager.ThrowExceptionIfFileDoesntExist(String fileName) in C:\BuildAgent\work\a22593881c1cbdfe\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\IO\FileManager.cs:Zeile 1389.
+   bei FlatRedBall.Content.ContentManager.LoadFromFile[T](String assetName) in C:\BuildAgent\work\a22593881c1cbdfe\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\Content\ContentManager.cs:Zeile 531.
+   bei FlatRedBall.Content.ContentManager.Load[T](String assetName) in C:\BuildAgent\work\a22593881c1cbdfe\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\Content\ContentManager.cs:Zeile 393.
+   bei FlatRedBall.FlatRedBallServices.Load[T](String assetName, String contentManagerName) in C:\BuildAgent\work\a22593881c1cbdfe\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallServices.cs:Zeile 1096.
+   bei Algorhytms.Entities.Goalpost.LoadStaticContent(String contentManagerName) in C:\Users\Nick_\Documents\FlatRedBallProjects\Algorhytms\Algorhytms\Entities\Goalpost.Generated.cs:Zeile 307.
+   bei Algorhytms.Screens.GameScreen.LoadStaticContent(String contentManagerName) in C:\Users\Nick_\Documents\FlatRedBallProjects\Algorhytms\Algorhytms\Screens\GameScreen.Generated.cs:Zeile 261.
+   bei Algorhytms.Screens.Level_1.LoadStaticContent(String contentManagerName) in C:\Users\Nick_\Documents\FlatRedBallProjects\Algorhytms\Algorhytms\Screens\Level_1.Generated.cs:Zeile 146.
+   bei Algorhytms.Screens.Level_1.Initialize(Boolean addToManagers) in C:\Users\Nick_\Documents\FlatRedBallProjects\Algorhytms\Algorhytms\Screens\Level_1.Generated.cs:Zeile 27.
+   bei FlatRedBall.Screens.ScreenManager.LoadScreen(String screen) in C:\BuildAgent\work\a22593881c1cbdfe\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\Screens\ScreenManager.cs:Zeile 463.
+   bei FlatRedBall.Screens.ScreenManager.Start(Type screenToStartWithType) in C:\BuildAgent\work\a22593881c1cbdfe\FlatRedBall\Engines\FlatRedBallXNA\FlatRedBall\Screens\ScreenManager.cs:Zeile 354.
+   bei Algorhytms.Game1.Initialize() in C:\Users\Nick_\Documents\FlatRedBallProjects\Algorhytms\Algorhytms\Game1.cs:Zeile 88.
+   bei Microsoft.Xna.Framework.Game.DoInitialize()
+   bei Microsoft.Xna.Framework.Game.Run(GameRunBehavior runBehavior)
+   bei Algorhytms.Program.Main() in C:\Users\Nick_\Documents\FlatRedBallProjects\Algorhytms\Algorhytms\Program.cs:Zeile 20.
